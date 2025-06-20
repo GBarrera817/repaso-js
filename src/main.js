@@ -1,0 +1,61 @@
+import './style.css'
+import javascriptLogo from './javascript.svg'
+import viteLogo from '/vite.svg'
+import { setupCounter } from './counter.js'
+import TemplateStringsEjemplo from './ejemplos/c21_template-strings.js'
+// import funcionPrincipal, { funcionExportada, configuracionesGlobales } from './ejemplos/modulo.js'
+// import VariablesEjemplo from './ejemplos/variables.js' 
+// import { EjemploThis } from './ejemplos/funciones-flecha.js'
+//import OperadorTerminarioEjemplo from './ejemplos/operador-ternario.js'
+// import LiteralesDeObjetosMejorados from './ejemplos/c23_literal-objeto-mejorado.js'
+// import DestructurarEjemplo from './ejemplos/c24_destructuring.js'
+import OperadorSpread from './ejemplos/c25_spread.js'
+
+document.querySelector('#app').innerHTML = `
+  <div>
+    <a href="https://vite.dev" target="_blank">
+      <img src="${viteLogo}" class="logo" alt="Vite logo" />
+    </a>
+    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
+      <img src="${javascriptLogo}" class="logo vanilla" alt="JavaScript logo" />
+    </a>
+    <h1>Hello Vite!</h1>
+    <div class="card">
+      <button id="counter" type="button"></button>
+    </div>
+    <p class="read-the-docs">
+      Click on the Vite logo to learn more
+    </p>
+  </div>
+`
+
+setupCounter(document.querySelector('#counter'))
+
+// Clase 18: Módulos en Javascript
+/*
+funcionExportada();
+console.log(configuracionesGlobales.idioma);
+funcionPrincipal();
+*/
+
+// Clase 19: Variables: let, var y const
+// VariablesEjemplo();
+
+// Clase 20: Funciones flecha
+// window.nombre = 'Claudia';
+// EjemploThis();
+
+// Clase 21: TemplateStrings
+// TemplateStringsEjemplo();
+
+// Clase 22: Operador ternario
+// OperadorTerminarioEjemplo();
+
+// Clase 23: Literal objeto mejorado
+// LiteralesDeObjetosMejorados();
+
+// Clase 24: Destructurar
+// DestructurarEjemplo();
+
+// Clase 25: Operador Spread
+OperadorSpread();
