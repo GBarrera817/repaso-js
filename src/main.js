@@ -9,7 +9,8 @@ import TemplateStringsEjemplo from './ejemplos/c21_template-strings.js'
 //import OperadorTerminarioEjemplo from './ejemplos/operador-ternario.js'
 // import LiteralesDeObjetosMejorados from './ejemplos/c23_literal-objeto-mejorado.js'
 // import DestructurarEjemplo from './ejemplos/c24_destructuring.js'
-import OperadorSpread from './ejemplos/c25_spread.js'
+// import OperadorSpread from './ejemplos/c25_spread.js'
+import Promesa, {AsyncAwait} from './ejemplos/c26_asincrona.js'
 
 document.querySelector('#app').innerHTML = `
   <div>
@@ -58,4 +59,8 @@ funcionPrincipal();
 // DestructurarEjemplo();
 
 // Clase 25: Operador Spread
-OperadorSpread();
+// OperadorSpread();
+
+// Clase 26: Promesas y Async/Await (Programación asíncrona)
+Promesa();
+AsyncAwait();
