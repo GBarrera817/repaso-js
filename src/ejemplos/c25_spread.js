@@ -52,18 +52,16 @@ export default function OperadorSpread() {
     // console.log(muchosNumeros2); // (5) [2, 3, 4, 5, 6]
 
     const muchosNumerosClonado = [...muchosNumeros];
-    console.log(muchosNumerosClonado);
+    // console.log(muchosNumerosClonado);
     muchosNumerosClonado.push(6);
-
-    console.log(muchosNumeros);  // (5) [2, 3, 4, 5]
-    console.log(muchosNumerosClonado); // (5) [2, 3, 4, 5, 6]
+    // console.log(muchosNumeros);  // (5) [2, 3, 4, 5]
+    // console.log(muchosNumerosClonado); // (5) [2, 3, 4, 5, 6]
 
     // Ejemplo 6: Operador Spread sobre un objeto
     const persona = {
         nombre: 'Gabriela',
         apellido: 'Barrera'
     };
-
     const persona2 = {
         ...persona,
         edad: 999,
@@ -72,6 +70,19 @@ export default function OperadorSpread() {
             provincia: 'Coquimbo'
         }
     }
+    // console.log(persona2);
 
-    console.log(persona2);
+    // Ejemplo 7: Clonando un objeto
+
+    const persona3 = { ...persona2 };
+    persona3.nombre = 'Claudia';
+    // console.log(persona3);
+
+    // Ejemplo 8: Destructurar y operador spread sobre un objeto
+
+    const { edad, direccion, ...persona4 } = persona2;
+
+    console.log(edad);
+    console.log(direccion);
+    console.log(persona4);
 }
