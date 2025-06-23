@@ -9,10 +9,10 @@ import { setupCounter } from './counter.js'
 //import OperadorTerminarioEjemplo from './ejemplos/operador-ternario.js'
 // import LiteralesDeObjetosMejorados from './ejemplos/c23_literal-objeto-mejorado.js'
 // import DestructurarEjemplo from './ejemplos/c24_destructuring.js'
-// // import OperadorSpread from './ejemplos/c25_spread.js'
+// import OperadorSpread from './ejemplos/c25_spread.js'
 // import { Rectangulo, Cuadrado } from './ejemplos/c26_clases.js'
-import MapEjemplo from './ejemplos/c27_arreglo-map.js'
-import Promesa, {AsyncAwait} from './ejemplos/c26_asincrona.js'
+// import MapEjemplo from './ejemplos/c27_arreglo-map.js'
+import Promesa, {AsyncAwait} from './ejemplos/c28_asincrona.js'
 
 document.querySelector('#app').innerHTML = `
   <div>
@@ -63,7 +63,7 @@ funcionPrincipal();
 // DestructurarEjemplo();
 
 // Clase 25: Operador Spread
-// // OperadorSpread();
+// OperadorSpread();
 
 // Clase 26: Clases
 // const rectangulo1 = new Rectangulo(2, 3);
@@ -78,10 +78,9 @@ funcionPrincipal();
 // cuadrado1.area();
 
 // Clase 27: Arreglo Map
+// const lista = MapEjemplo();
+// document.querySelector('#listado').innerHTML = lista;
 
-const lista = MapEjemplo();
-document.querySelector('#listado').innerHTML = lista;
-
-// Clase 26: Promesas y Async/Await (Programación asíncrona)
+// Clase 28: Promesas y Async/Await (Programación asíncrona)
 Promesa();
 AsyncAwait();
